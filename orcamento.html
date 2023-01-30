@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento | Bikcraft</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/orcamento.css">
+    <link rel="stylesheet" href="./css/contato.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <a href="./index.html" class="titulo">bikcraft</a>
+            <div class="nav-menu">
+                <a href="./bicicletas.html">Bicicletas</a>
+                <a href="./seguros.html">Seguros</a>
+                <a href="./contato.html">Contatos</a>
+            </div>
+    </header>
+    <section class="contato">
+        <form action="./orcamento.html" class="orçamento-produto">
+                <div class="orcamento-titulo">
+                    <p>COTAÇÕES NO SEU EMAIL</p>
+                    <h1>solicite um orçamento<span class="cor-amarela">.</span></h1>
+                </div>
+                <div class="orcamento-tabela">
+                    <div class="orcamento-planos">
+                        <h2>BIKCRAFT OU SEGURO?</h2>
+
+                        <input type="radio" name="tipo" value="bikcraft" id="bikcraft">
+                        <label for="bikcraft">Bikcraft</label>
+
+                        <input type="radio" name="tipo" value="seguro" id="seguro">
+                        <label for="seguro">Seguro</label>
+
+                            <div class="orcamento-conteudo" id="orcamento-bikcraft">
+                                <h2>Escolha a sua</h2>
+                                <input type="radio" name="produto" value="nimbus" id="nimbus">
+                                <label for="nimbus">Nimbus Stark <span>R$4999</span></label>
+                                <div class="bikcraft-detalhes" id="nimbus-detalhes">
+                                    <ul class="bikcraft-detalhes-desc">
+                                        <li><img src="./imgs/eletrica.svg" alt="eletrica"></img>Motor Elétrico</li>
+                                        <li><img src="./imgs/carbono.svg" alt="carbono"></img>Fibra de Carbono</li>
+                                        <li><img src="./imgs/velocidade.svg" alt="velocidade"></img>50 km/h</li>
+                                        <li><img src="./imgs/rastreador.svg" alt="rastreador"></img>Rastreador</li>
+                                    </ul>
+                                    <img src="./imgs/nimbus-home.jpg" alt="nimbus">
+                                </div>
+
+                                <input type="radio" name="produto" value="magic" id="magic">
+                                <label for="magic">Magic Might <span>R$2499</span></label>
+                                <div class="bikcraft-detalhes" id="magic-detalhes">
+                                    <ul class="bikcraft-detalhes-desc">
+                                        <li><img src="./imgs/eletrica.svg" alt="eletrica"></img>Motor Elétrico</li>
+                                        <li><img src="./imgs/carbono.svg" alt="carbono"></img>Fibra de Carbono</li>
+                                        <li><img src="./imgs/velocidade.svg" alt="velocidade"></img>45 km/h</li>
+                                        <li><img src="./imgs/rastreador.svg" alt="rastreador"></img>Rastreador</li>
+                                    </ul>
+                                    <img src="./imgs/magic-home.jpg" alt="Magic">
+                                </div>
+
+                                <input type="radio" name="produto" value="cosmic" id="cosmic">
+                                <label for="cosmic">Nebula Cosmic <span>R$3999</span></label>
+                                <div class="bikcraft-detalhes" id="cosmic-detalhes">
+                                    <ul class="bikcraft-detalhes-desc">
+                                        <li><img src="./imgs/eletrica.svg" alt="eletrica"></img>Motor Elétrico</li>
+                                        <li><img src="./imgs/carbono.svg" alt="carbono"></img>Fibra de Carbono</li>
+                                        <li><img src="./imgs/velocidade.svg" alt="velocidade"></img>40 km/h</li>
+                                        <li><img src="./imgs/rastreador.svg" alt="rastreador"></img>Rastreador</li>
+                                    </ul>
+                                    <img src="./imgs/nebula-home.jpg" alt="nebula">
+                                </div>
+                            </div>
+
+                            <div class="orcamento-conteudo" id="orcamento-seguro">
+                                <h2>Escolha um plano</h2>
+                                <input type="radio" name="produto" value="prata" id="prata">
+                                <label for="prata">Prata<span>R$199</span></label>
+                                <input type="radio" name="produto" value="ouro" id="ouro">
+                                <label for="ouro">Ouro <span>R$299</span></label>
+                            </div>
+                    </div>
+                    <div class="orcamento-form">
+                        <h2 class="dado-pessoais">DADOS PESSOAIS</h2>
+                        <div class="contato-2-nome">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome">
+                        </div>
+                        <div class="contato-2-telefone">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" id="sobrenome" name="sobrenome">
+                        </div>
+                        <div class="contato-2-email">    
+                            <label for="cpf">CPF</label>
+                            <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+                        </div>
+                        <div class="contato-2-email">    
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="contato@email.com">
+                        </div>
+                        <h2>ENTREGA</h2>
+                        <div class="contato-2-nome">
+                            <label for="CEP">CEP</label>
+                            <input type="text" id="CEP" name="CEP">
+                        </div>
+                        <div class="contato-2-nome">
+                            <label for="numero">Número</label>
+                            <input type="text" id="numero" name="numero">
+                        </div>
+                        <div class="contato-2-nome">
+                            <label for="Logradouro">Logradouro</label>
+                            <input type="text" id="Logradouro" name="Logradouro">
+                        </div>
+                        <div class="contato-2-nome">
+                            <label for="Bairro">Bairro</label>
+                            <input type="text" id="Bairro" name="Bairro">
+                        </div>
+                        <div class="contato-2-nome">
+                            <label for="Cidade">Cidade</label>
+                            <input type="text" id="Cidade" name="Cidade">
+                        </div>
+                        <div class="contato-2-nome">
+                            <label for="Estado">Estado</label>
+                            <input type="text" id="Estado" name="Estado">
+                        </div>
+                        <button>SOLICITAR ORÇAMENTO</button>
+                    </div> 
+                </div>
+        </form>
+    </section>
+    <footer class="rodape">
+        <h1>bikcraft</h1>
+        <div class="rodape-contato">
+            <h2>CONTATO</h2>
+            <div class="rodape-contatos">
+                <a href="">+55 21 9999-9999</a>
+                <a href="">contato@bikcraft.com</a>
+            </div>
+            <div class="rodape-contatos-loca">
+                <p>Rua Ali Perto, 42 - Botafogo</p>
+                <p>Rio de Janeiro - RJ</p>
+            </div>
+            <div class="rodape-contatos-imgs">
+                <img src="./imgs/icons/instagram.svg" alt="instagram">
+                <img src="./imgs/icons/facebook.svg" alt="facebook">
+                <img src="./imgs/icons/youtube.svg" alt="youtube">
+            </div>
+        </div>
+        <div class="rodape-info">
+            <h2>INFORMAÇÕES</h2>
+            <ul>
+                <a href="./bicicletas.html">
+                    <li>Bicicletas</li>
+                </a>
+                <a href="./seguros.html">
+                    <li>Seguros</li>
+                </a>
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+                <a href="./termos.html">
+                    <li>Termos e Condições</li>
+                </a>
+            </ul>
+        </div>
+        <p class="direitos">Bikcraft © Alguns direitos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,144 @@
+.vantagens {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #000;
+}
+
+.vantagens h1{
+    color: #FFF;
+    font-size: 4rem;
+    margin-left: 150px;
+    margin-top: 0px;
+    padding-top: 100px;
+}
+
+.vantagens ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 150px;
+    margin-right: 150px;
+    gap: 80px;
+    margin-bottom: 150px;
+}
+
+.vantagens ul li h2 {
+    color: #FFF;
+    font-weight: 100;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.vantagens ul li p{
+    color: #B2b2b2;
+    font-size: 1rem;
+}
+
+.perguntas {
+    display: grid;
+    padding: 100px 150px 150px 150px;
+}
+
+.perguntas h1{
+    font-size: 4rem;
+    margin: 0px;
+    margin-bottom: 60px;
+}
+
+.perguntas ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    gap: 20px;
+    border-radius: 4px;
+}
+.perguntas ul li:nth-child(odd) {
+    background: #f7f7f7;
+}
+
+.perguntas ul li{
+    padding: 20px;
+}
+
+.perguntas ul li h2{
+    padding-bottom: 10px;
+    padding-left: 20px;
+    font-size: 1.25rem;
+    position: relative;
+}
+
+.perguntas ul li h2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 8px;
+    background: #FFBB00;
+    left: 0px;
+    margin-top: 7px;
+}
+
+.perguntas ul li h2::after {
+    content:"";
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 6px;
+    background-image: url(/imgs/icons/seta-abrir.svg);
+    right: 0px;
+    top: 10px;
+    transition: 0.3s;
+}
+
+.perguntas ul li h2:hover:after {
+    transform: rotate(180deg);
+}
+
+
+.perguntas ul li p{
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 1rem;
+    max-width: 80ch;
+}
+
+@media (max-width:800px) {
+    .perguntas {
+        padding: 40px;
+    }
+
+    .perguntas h1{
+        font-size: 3rem;
+        padding-left: 0px;
+        margin-left: 40px;
+    }
+
+    .vantagens {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .vantagens h1{
+        color: #FFF;
+        font-size: 4rem;
+        margin-left: 40px;
+        margin-top: 0px;
+        padding-top: 100px;
+    }
+    
+    .vantagens ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 40px;
+        margin-right: 40px;
+        gap: 80px;
+        margin-bottom: 150px;
+    }
+}

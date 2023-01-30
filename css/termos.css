@@ -1,0 +1,60 @@
+* h1 , p , h2 , ul , li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.intro-termos {
+    background: #111111;
+    padding-left: 150px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.intro-termos p{
+    font-size: 1.75rem;
+    color: #b2b2b2;
+}
+
+.intro-termos h1 {
+    font-size: 4rem;
+    color: #FFF;
+}
+
+.termos-container {
+    padding-left: 150px;
+    padding-top: 60px;
+    margin-bottom: 60px;
+}
+
+.termos-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.termos-container ul {
+    margin-bottom: 40px;
+}
+
+.termos-container li {
+    font-size: 1rem;
+    color: #2e2e2e;
+    margin-bottom: 10px;
+    margin-right: 150px;
+    max-width: 80ch;
+    padding: 8px;
+    font-weight: 100;
+}
+
+@media (max-width:970px) {
+    .intro-termos {
+        background: #111111;
+        padding-left: 40px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .termos-container {
+        padding-left: 40px;
+        padding-top: 60px;
+        margin-bottom: 60px;
+    }
+}

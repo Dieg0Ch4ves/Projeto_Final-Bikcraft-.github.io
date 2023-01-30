@@ -1,0 +1,241 @@
+* h1, p , h2 , h3, h4 {
+    margin:0px;
+    padding: 0px;
+}
+
+.intro-bicicletas {
+    grid-column: 1;
+    display: grid;
+    background: #111111;
+    padding: 40px 100px 60px 150px;
+}
+
+.intro-bicicletas h2 {
+    color:#b2b2b2;  
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.intro-bicicletas h1 {
+    font-size: 4rem;
+    margin: 0px;
+    color: white;
+}
+
+.bikes {
+    background:#FFF;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px 200px 60px 150px;
+    gap: 0px 40px;
+}
+
+.imagem-bikes {
+    grid-column: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.bikes img{
+    display: flex;
+    width: 100%;
+    height: 340px;
+    border-radius: 4px;
+}
+
+.bike-preco {
+    position: absolute;
+    padding: 12px 24px;
+    background: #000;
+    color: #FFF;
+    font-weight: 100;
+    border-radius: 4px;
+    right: 0px;
+    top: 15px;
+}
+
+.bike-detalhe {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.bikes h1{
+    font-size: 2rem;
+    grid-column: 1 / 4;
+    grid-row: 1;
+    padding-top: 40px;
+    position: relative;
+}
+
+.bikes h1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #ffbf00;
+    width: 15px;
+    height: 8px;
+    top: 20px;
+}
+
+.bikes p{
+    font-size: 1rem;
+    color: #595959;
+    grid-column: 1 / 4;
+    grid-row: 2;
+}
+
+.bike-desc {
+    grid-column: 1 / 3;
+    margin: 0px;
+    padding: 0px;
+}
+
+.bike-desc li{
+    display: flex;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.bike-desc p {
+    font-size: 1.25rem;
+    color: #595959;
+    font-weight: 100;
+}
+
+.bike-desc li img{
+    width: 24px;
+    height: 24px;
+    display: inline;
+    margin-right: 6px;
+}
+
+.bike-detalhe a{
+    display: flex;
+    border-radius: 4px;
+    color: #332200;
+    background: linear-gradient(#ffbf00, #f2a50c);
+    font-weight: 600;
+    text-decoration: none;
+    grid-column: 3;
+    grid-row: 3;
+    align-self: center;
+    padding: 16px 32px;
+    position: relative;
+}
+
+.bike-detalhe a::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 18px;
+    height: 10px;
+    background: url(/imgs/icons/seta.svg);
+    right: 25px;
+    top: 19px;
+}
+
+.bike-detalhe a:hover::after {
+    right: 20px;
+    transition: 0.2s;
+}
+
+.bike-detalhe a:hover {
+    background: linear-gradient(#ffb60d, #e59317);
+}
+
+.bikes-magic {
+    background: linear-gradient(to right, #FFF 30%, #111111 0%);;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px 200px 60px 150px;
+    gap: 0px 40px;
+}
+
+.bikes-magic img{
+    display: block;
+    width: 100%;
+    height: 340px;
+    border-radius: 4px;
+    background-position: center;
+}
+
+.bikes-magic h1{
+    font-size: 2rem;
+    grid-column: 1 / 4;
+    grid-row: 1;
+    padding-top: 40px;
+    position: relative;
+    color: #FFF;
+}
+
+.bikes-magic h1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #ffbf00;
+    width: 15px;
+    height: 8px;
+    top: 20px;
+}
+
+.bikes-magic p{
+    font-size: 1.25rem;
+    color: #b2b2b2;
+    grid-column: 1 / 4;
+    grid-row: 2;
+}
+
+@media (max-width: 1200px) {
+    .intro-bicicletas {
+        padding: 40px 50px 60px 50px;
+    }
+
+    .bikes {
+        padding: 60px 100px 60px 50px;
+    }
+
+    .bikes-magic {
+        padding: 60px 100px 60px 50px;
+    }
+}
+
+@media (max-width: 917px) {
+    .bikes {
+        grid-template-columns: 1fr;
+        padding: 60px 40px 60px 40px;
+    }
+
+    .bikes-magic {
+        background: #111111;
+        grid-template-columns: 1fr;
+        padding: 60px 40px 60px 40px;
+    }
+
+    .bikes img{
+        height: 448px;
+    }
+
+    .bikes-magic img{
+        height: 448px
+    }
+
+    .bike-detalhe-desc {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:667px) {
+    .intro-bicicletas h2 {
+        color:#b2b2b2;  
+        font-size: 1.25rem;
+        font-weight: 100;
+    }
+    
+    .intro-bicicletas h1 {
+        font-size: 2.5rem;
+        margin: 0px;
+        color: white;
+    }
+}

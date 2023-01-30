@@ -1,0 +1,267 @@
+* h1 , p , h2 , ul , li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+body {
+    background: #111111;
+}
+
+.nimbus-titulo {
+    margin-left: 150px;
+    padding-top: 60px;
+}
+
+.nimbus-titulo p{
+    color: #b2b2b2;
+    font-size: 1.5rem;
+}
+
+.nimbus-titulo h1{
+    font-size: 4rem;
+    color: #FFF;
+}
+
+.bike-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+    align-items: start;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.bike-img {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+.bike-img img{
+    flex: 1;
+    width: 100%;
+    min-width: 200px;
+}
+
+.bike-img img:first-child {
+    min-width: 100%;
+}
+
+.bike-sub {
+    display: grid;
+    gap: 20px;
+}
+
+.bike-sub p{
+    font-size: 12px;
+    color: #FFF;
+}
+
+.bike-comprar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.bike-comprar h2{
+    color: #b2b2b2;
+    font: 400 1.5rem/1.5 "roboto", sans-serif;
+    grid-column: 1 / 3;
+}
+
+.botao {
+    display: inline-block;
+    padding: 16px 32px;
+    background: linear-gradient(#ffbf00, #f2a50c);
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+    color: #332200;
+    font: 600 1.125rem/1.35 "Poppins", sans-serif;
+    max-width: max-content;
+    text-decoration: none;
+}
+
+.botao:hover {
+    background: linear-gradient(#ffb60d, #e59317)
+}
+
+.bike-comprar ul li{
+    color: #9c9c9c;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background: #000;
+    max-width: max-content;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.bike-info {
+    background: #000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    padding: 32px;
+    border-radius: 4px;
+}
+
+.bike-info img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 8px;
+}
+
+.bike-info h2 {
+    font-size: 1.125rem;
+    color: #FFF;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.bike-info p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #b2b2b2;
+}
+
+.bike-ficha {
+    background: #000000;
+    padding: 32px;
+    border-radius: 4px;
+}
+
+.bike-ficha li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #111111;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.bike-ficha li:last-child {
+    border-bottom: none;
+}
+
+.bike-ficha li h3 {
+    color: #CCCCCC;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.bike-ficha li p {
+    color: #9c9c9c;
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 4px;
+}
+
+.bike-escolha {
+    background: #FFF;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 120px;
+}
+
+.bike-escolha h1{
+    font-size: 4rem;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.bike-escolha-img {
+    display: flex;
+    padding-bottom: 20px;
+    gap: 40px;
+}
+
+.bike-escolha-img img{
+    width: 100%;
+    border-radius: 4px;
+}
+
+.bike-escolha-img a{
+    text-decoration: none;
+}
+
+.bike-escolha-img a h2 {
+    font-size: 1.75rem;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.bike-escolha-img a h2::before{
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    margin-right: 10px;
+    background: #ffbf00;
+} 
+
+.bike-escolha-img a:hover h2:before {
+    width: 25px;
+    height: 9px;
+    transition: 0.3s;
+}
+
+.bike-escolha-img p {
+    font-size: 1.125rem;
+    color: #595959;
+    padding-left:25px;
+}
+
+.bike-seguro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 150px;
+    padding-right: 150px;
+    background: #111111;
+    gap: 0px 40px;
+    box-shadow: inset 0 100px #FFF, inset 0 -100px #000
+}
+
+.bike-seguro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.bike-seguro-div {
+    padding: 180px 0px;
+}
+
+
+.bike-seguro-div h1{
+    color: #FFF;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.bike-seguro-div p{
+    font-size: 1.5rem;
+    color: #b2b2b2;
+    margin-bottom: 20px;
+}
+
+.bike-seguro-div a{
+    display: inline-block;
+    padding: 16px 32px;
+    background: linear-gradient(#ffbf00, #f2a50c);
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+    color: #332200;
+    font: 600 1.125rem/1.35 "Poppins", sans-serif;
+    max-width: max-content;
+    text-decoration: none;
+}
+
+.bike-seguro-div a:hover {
+    background: linear-gradient(#ffb60d, #e59317)
+}
